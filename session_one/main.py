@@ -1,18 +1,26 @@
 import os
 import re
 import time
-from agents import Agent,Runner,set_tracing_disabled,function_tool
-from agents.extensions.models.litellm_model import LitellmModel
+from agents import Agent,Runner,set_tracing_disabled,function_tool # type: ignore
+from agents.extensions.models.litellm_model import LitellmModel # type: ignore
 
 set_tracing_disabled(disabled=True)
 
+
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+if not OPENAI_API_KEY:
+    raise ValueError("OPENAI_API_KEY is not set in the environment variables.")
+
+MODEL = 'gpt-4.1-mini'
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
-MODEL = 'gemini/gemini-2.5-flash'
+if not GEMINI_API_KEY:
+    raise ValueError("GEMINI_API_KEY is not set in the environment variables.") 
+MODEL2 = 'gemini/gemini-2.5-flash'
 
 agent = Agent(
     name="Crash course Assistant",
     instructions = "You are a crash course assistant. Provide YouTube links and the best websites (both paid and free) for practice.",
-    model = LitellmModel(model=MODEL, api_key=GEMINI_API_KEY)
+    model = LitellmModel(model=MODEL2, api_key=GEMINI_API_KEY)
 )
 
 
