@@ -21,8 +21,7 @@ agent = Agent(
         model=MODEL,
         api_key=GEMINI_API_KEY,
     ),
-    tools=[weather],
-    tool_use_behavior="stop_on_first_tool",
+    tools=[weather]
 )
 
 result = Runner.run_sync(agent, "What is the weather of Tokyo?")
