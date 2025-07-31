@@ -26,8 +26,8 @@ st.markdown("""
     .main-header {
         text-align: center;
         padding: 1rem 0;
-        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-        color: white;
+        background: #000000;
+        color: #ffffff;
         border-radius: 10px;
         margin-bottom: 2rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -42,28 +42,28 @@ st.markdown("""
     .agent-badge {
         display: inline-block;
         padding: 0.25rem 0.75rem;
-        background: #667eea;
-        color: white;
+        background: #000000;
+        color: #ffffff;
         border-radius: 15px;
         font-size: 0.8rem;
         margin-bottom: 0.5rem;
     }
     
     .user-message {
-        background: #1a1a1a;
+        background: #000000;
         padding: 1rem;
         border-radius: 10px;
         margin: 0.5rem 0;
-        border-left: 4px solid #667eea;
+        border-left: 4px solid #ffffff;
         color: #ffffff;
     }
     
     .assistant-message {
-        background: #1a1a1a;
+        background: #000000;
         padding: 1rem;
         border-radius: 10px;
         margin: 0.5rem 0;
-        border-left: 4px solid #764ba2;
+        border-left: 4px solid #ffffff;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         color: #ffffff;
     }
@@ -73,7 +73,7 @@ st.markdown("""
         align-items: center;
         gap: 0.5rem;
         padding: 0.5rem;
-        background: #2a2a2a;
+        background: #000000;
         border-radius: 5px;
         margin: 0.5rem 0;
         color: #ffffff;
@@ -84,7 +84,7 @@ st.markdown("""
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background: #667eea;
+        background: #ffffff;
         animation: typing 1.4s infinite ease-in-out;
     }
     
@@ -98,26 +98,26 @@ st.markdown("""
     
     .stChatInput > div > div > input {
         border-radius: 25px;
-        border: 2px solid #667eea;
+        border: 2px solid #ffffff;
         padding: 0.75rem 1rem;
         background-color: #000000;
         color: #ffffff;
     }
     
     .stChatInput > div > div > input:focus {
-        border-color: #764ba2;
-        box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+        border-color: #ffffff;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
     }
 
     .stButton>button {
         border-radius: 20px;
-        background-color: #764ba2;
-        color: white;
+        background-color: #000000;
+        color: #ffffff;
         border: none;
         padding: 0.5rem 1rem;
     }
     .stButton>button:hover {
-        background-color: #667eea;
+        background-color: #000000;
     }
 </style>
 """, unsafe_allow_html=True)
