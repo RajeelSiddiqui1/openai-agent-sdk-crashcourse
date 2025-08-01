@@ -121,12 +121,12 @@ st.markdown("""
 
 set_tracing_disabled(disabled=True)
 
-GEMINI_API_KEY = ""
+GEMINI_API_KEY = "A5JVxhG5iZLcy9AWaqNFkxxjdN0bbc0XLEPgnBiNwISSu1ik"
 if not GEMINI_API_KEY:
     st.error("🔑 GEMINI_API_KEY environment variable is not set. Please configure your API key.")
     st.stop()
 
-MODEL = "gemini/gemini-2.5-flash"
+MODEL = "gpt-3.5-turbo"
 
 @st.cache_resource
 def init_agents():
