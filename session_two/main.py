@@ -126,7 +126,8 @@ if not GEMINI_API_KEY:
     st.error("🔑 GEMINI_API_KEY environment variable is not set. Please configure your API key.")
     st.stop()
 
-MODEL = "gpt-3.5-turbo"
+MODEL = "gemini-2.5-flash"
+
 
 @st.cache_resource
 def init_agents():
