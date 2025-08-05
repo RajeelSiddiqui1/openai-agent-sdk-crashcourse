@@ -121,7 +121,7 @@ st.markdown("""
 
 set_tracing_disabled(disabled=True)
 
-GEMINI_API_KEY = "AIzaSyDVnAWEcJx7H_2ccJ7wBC0vNsSc-7dY10k"
+GEMINI_API_KEY = "AIzaSyCXC2LmDlGvubuem_K3oy2pS86zFWusMjA"
 if not GEMINI_API_KEY:
     st.error("🔑 GEMINI_API_KEY environment variable is not set. Please configure your API key.")
     st.stop()
