@@ -1,1 +1,0 @@
-# openai-agent-sdk-crashcourse

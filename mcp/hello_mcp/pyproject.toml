@@ -1,10 +1,9 @@
 [project]
-name = "session-three"
+name = "hello-mcp"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "asyncio>=3.4.3",
-    "openai-agents[litellm]>=0.2.4",
+    "mcp>=1.12.2",
 ]
